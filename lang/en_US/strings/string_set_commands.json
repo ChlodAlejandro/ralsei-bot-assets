@@ -1,0 +1,16 @@
+{
+
+    "flags": {
+        "unblockable": "unblockable",
+        "prefixless": "prefixless (reactive)",
+        "plain": "plain text box",
+        "embed": "embed box response",
+        "rawtext": "raw text response",
+        "noout": "no output",
+        "debug": "debug command",
+        "secret": "secret command",
+        "whitelisted": "whitelisted users only",
+        "server": "server-specific"
+    }
+
+}

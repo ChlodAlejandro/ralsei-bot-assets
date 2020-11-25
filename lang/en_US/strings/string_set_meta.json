@@ -1,0 +1,72 @@
+{
+    "locale": {
+        "name": "English (International/United States)",
+        "tz-name": "Etc/UTC"
+    },
+
+    "bot": {
+        "name": "Ralsei Bot",
+        "footer": "<> with \u2665 by {0}/about"
+    },
+
+    "presence": {
+        "starting": "Starting... [{0}/{1}]",
+        "normal": "with {0} servers | v{1} | !ralsei help",
+        "updating": "Updating...",
+        "waiting": "Please wait...",
+        "maintenance": "Under maintenance (ralsei.chlod.net/status)",
+        "unavailable": "Unavailable (ralsei.chlod.net/status)"
+    },
+
+    "trivia": [
+        "Hugs don't have to target a user. Just a name. You can probably use the names of game characters...",
+        "Make Ralsei hug someone else using !ralsei hug <user - example: Bob> or you using !ralsei hug.",
+        "There are usually 10 different variants for each reply. There are also replies with extra flavor text, which also has 10 different variants. You can also trigger special responses by requesting out-of-the ordinary things.",
+        "There are multiple tips. Try finding them all!",
+        "The bot will break a few times. In this case, patiently wait for it to go online again. If it does not, please notify the developer immediately (contact details are found at the [bot website](https://ralsei.chlod.net/about).)",
+        "If the bot does not reply, there might be something wrong. If this keeps happening (and with every command as well), feel free to contact the developers.",
+        "Don't lewd him.",
+        "Adding a `-` before the prefix automatically deletes the calling message. Mods can disable this functionality though, so watch out!",
+        "We try our best to prevent users from doing very unappealing things to Ralsei.",
+        "The bot development went on a long hiatus due to code documentation issues.",
+        "This is the first Discord bot ever made by the bot's owner.",
+        "Ralsei runs on Node.js, a framework that uses JavaScript. But you probably don't need to know those nerdy details.",
+        "The main bottleneck for responses is the time it takes to get a text box and to send that box to the user. Otherwise, Ralsei is pretty fast.",
+        "There's probably hundreds of these trivia.",
+        "Ralsei does have a Twitter account at [@DiscordRalsei](https://twitter.com/DiscordRalsei).",
+        "There was originally one secret command, but on version 1.1 it became 4, and now there's an undisclosed amount.",
+        "If a message from here starts with a :key:, it may be a clue for a certain secret command.",
+        "Ralsei has a built-in reporting system for issues pertaining the bot.",
+        "Version 1.2 was supposed to be the next update, but since 1.2 spent more than a year in development, it was scrapped in favor of version 2.0.",
+        "Ralsei keeps track of every cake baked.",
+        "A cool artist named OmarTheNerd made the avatar for Ralsei. The previous avatar initially just had Ralsei's terribly-reconstructed face. Going farther back, Ralsei's avatar used to be Ralsei's smiling sprite.",
+        "Everyone who has contributed to the Ralsei Bot in a way that I feel is influential enough gets their own spot on the [about page](https://ralsei.chlod.net/about).",
+        "Ralseilian IDs were a thing, but that got scrapped real quick.",
+        "Ralsei has to rely on a text box generator made by [Demirramon](https://www.demirramon.com/) in order to run. Even if the developers tried to make their own generator, they won't be able to rival Demi's version's completeness.",
+        "`{prefix}say mode=regular box=undertale character=sans expression=wink i already \"befriended\" your mom last night.`",
+        "Ralsei has a verified bot badge to let you know that we're the actual Ralsei bot.",
+        "Some people invite Ralsei over for the Ralsei features, but a lot actually invite Ralsei for the text box generating functionality. So hats of to [Demirramon](https://www.demirramon.com/) for making the generator in the first place!",
+        "The initial inspiration to make the bot was the [r/ralsei](https://reddit.com/r/ralsei) subreddit. Their moderators are a bunch of cool madlads.",
+        ":cheese:",
+        "Secret command clues start with a :key:. If it didn't have a :key:, it's most likely not a clue for a secret command.",
+        "Server moderators can allow only certain users to run commands. You can find about that more on the [configuration manual](https://ralsei.chlod.net/configuration).",
+        "The Ralsei Bot runs on a $3.35 virtual machine. What else runs on this machine, you ask? [Ralsei Bot's official website!](https://ralsei.chlod.net)",
+        "2.0 (and 1.2, by proxy) was in development for <insert exact time (M, d, h, m, s)>.",
+        "A normal cake usually consists of 1 and 1/2 cups of all-purpose flour, a 1/2 cup of butter, a 1/2 cup of milk, 1 and 3/4 teaspoons of baking powder, 2 eggs, and two teaspoons of vanilla extract. We're not telling you how to prepare it though. Search it on your own!",
+        "Unless there's a Ralsei text box, read it from the point of view of the developers. Including these messages. It would be weird to think Ralsei actually talks like this.",
+        "The developers have never actually seen a Ralsei plush in physical form.",
+        "One time, Ralsei got extremely slow due to performance issues, and replies to messages were sent 10 hours after the initial command.",
+        "Beward of copycat Ralsei bots bearing the same avatar and name as us! Make sure that you see a checkmark next to the \"BOT\" tag to see if it's really us.",
+        "Placing the secret commands here is an excuse to force users to get to know more about the bot.",
+        "Sometimes, commands just aren't documented. You might think that these are \"secret commands\", but in fact, they're not.",
+
+
+
+        ":key: *To access the chad, you must be glad.*\n*The name for the ship that sails, are small yet bad...*",
+        ":key: *Guess Ralsei can't take an L.*",
+        ":key: *[\\*demonic glitching sounds\\*](https://www.youtube.com/watch?v=w5p7WDk9hnQ)*",
+        ":key: *He is the greatest, he is the best.*\n*Praise him and the bot shall do the rest.*",
+        ":key: **C(CC(=O)O)C(C(=O)O)N.O.[Na]**",
+        ":key: *\\*sniff\\** Hello. My name is... My name is [***R A L S E I***](https://www.youtube.com/watch?v=h5aS3lYOZyU). \\*sniff\\**"
+    ]
+}

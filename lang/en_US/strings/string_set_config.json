@@ -1,0 +1,520 @@
+{
+
+    "global": {
+        "description": "Description",
+        "usage": "Usage",
+        "examples": "Examples",
+
+        "no-changes": "No changes made.",
+
+        "invalid": {
+            "not-object": "Configuration is not an object.",
+            "prefix": {
+                "regex": {
+                    "type": "Prefix `regex` is not a string."
+                },
+                "space": {
+                    "type": "Prefix `space` is not a boolean."
+                },
+                "unset": "Prefix is not set (must be set in complete mode.)",
+                "not-object": "Prefix must be an object containing a `regex` (actually just a string) and a `space` (a boolean)."
+            },
+            "blocklist": {
+                "entry": {
+                    "not-string": "Blocklist entry `{0}` is not a string.",
+                    "not-command": "Blocklist includes `{0}` which is not a valid command name.",
+                    "not-blockable": "Blocklist includes `{0}` which is an unblockable command."
+                },
+                "unset": "Blocklist is not set (must be in complete mode.)",
+                "not-array": "Blocklist must be an array, containing command names."
+            },
+            "quickresponses": {
+                "entry": {
+                    "key-no-white": "Quick response keywords must not contain a whitespace.",
+                    "val-not-string": "Quick responses must be strings."
+                },
+                "unset": "Quick responses are not set (must be set in complete mode).",
+                "not-object": "Quick responses must be an object, containing keywords mapped to box syntax."
+            },
+            "alerts": {
+                "not-strings": "Alert channels must be strings.",
+                "not-channel": "Only the following alert channels may be used: `lewd`, `no-access`, `blocked`, and `unknown`.",
+                "unset": "Alerts not set (must be in complete mode).",
+                "not-array": "Alerts must be an array, containing alert channels."
+            },
+            "allowautodelete": {
+                "unset": "Auto-delete flag not set (must be in complete mode).",
+                "not-boolean": "Auto-delete flag must be a boolean."
+            },
+            "permissions": {
+                "entry": {
+                    "path-not-string": "Permission paths must be strings.",
+                    "ps-not-string": "Permission strings must (obviously) be strings.",
+                    "ps-not-valid": "Permission path `{0}` has an invalid permission string."
+                },
+                "unset": "Permissions not set (must be in complete mode).",
+                "not-object": "Permissions must be an object, containing permission paths mapped to permission strings."
+            },
+            "log": {
+                "unset": "Log settings not set (must be in complete mode).",
+                "bad-type": "Log must be a boolean or an object with log settings."
+            }
+        }
+    },
+
+    "alerts": {
+
+        "displayName": "Alerts",
+
+        "description": "Ralsei Bot provides alerts whenever something unintended happens. In most cases, this would be an unknown command being run. Four alert channels exist, `unknown` for unknown commands, `not-allowed` for commands that a user cannot access, `blocked` for commands on the server blocklist, and `lewd`, a special alert channel which triggers if Ralsei and a provocative word are in the same sentence. All of these alerts can be disabled or enabled.",
+        "usage": "```\n{prefix}config alerts <action> <value>\n```\nValid `action`s include `list`, `enable`, `disable`, `enableall`, and `disableall`. Running these without values will provide help.",
+        "examples": [
+            "To disable unknown command alerts:\n```\n{prefix}config alerts disable unknown-command\n```",
+            "To enable the lewd warning:\n```\n{prefix}config alerts enable lewd\n```"
+        ],
+
+        "inv-action": "The given action is not a valid action. Valid `action`s include `list`, `enable`, `disable`, `enableall`, and `disableall`.",
+        "inv-channel": "The channel you provided is not a valid alert channel.",
+
+        "channels": {
+            "no-access": {
+                "name": "No Access",
+                "description": "Enables alerts for whenever a user attempts to access a command which is off limits for them. This is commonly due to the user not having the right permissions as configured."
+            },
+            "blocked": {
+                "name": "Blocklisted",
+                "description": "Enables alerts for whenever a user attempts to run a command which has been blocked by server moderators."
+            },
+            "unknown": {
+                "name": "Unknown",
+                "description": "Enables alerts for whenever a user attempts to run an unknown command."
+            },
+            "lewd": {
+                "name": "Lewd",
+                "description": "Enables alerts for whenever a user says the word \"ralsei\" along with an explicit word nearby (up to two words away.)"
+            }
+        },
+
+        "list": {
+            "extra-args": "**NOTE**: The `list` action does not take any arguments.",
+            "description": "These are the alerts and their statuses on your server."
+        },
+
+        "disableall": {
+            "description": "This will disable all alerts. If you want to go ahead, add a `Y` to the end of the command.",
+            "usage": "```\n{prefix}config alerts disableall Y\n```",
+            "examples": [
+                "To disable all alerts:\n```\n{prefix}config alerts disableall Y\n```",
+                "Any other value instead of `Y` will not work."
+            ],
+
+            "improper": "Proper confirmation was not provided. To confirm the action, please supply `Y` as the next argument, right after `disableall`.",
+            "success": {
+                "changed": "All alerts have been disabled.",
+                "unchanged": "All alerts were already disabled.",
+                "changes": "Alerts now have `{0}` enabled channels."
+            }
+        },
+
+        "enableall": {
+            "description": "This will enable all alerts. If you want to go ahead, add a `Y` to the end of the command.",
+            "usage": "```\n{prefix}config alerts enableall Y\n```",
+            "examples": [
+                "To enable all alerts:\n```\n{prefix}config alerts enableall Y\n```",
+                "Any other value instead of `Y` will not work."
+            ],
+
+            "improper": "Proper confirmation was not provided. To confirm the action, please supply `Y` as the next argument, right after `enableall`.",
+            "success": {
+                "changed": "All alerts have been enabled.",
+                "unchanged": "All alerts were already enabled.",
+                "changes": "Alerts now have `{0}` enabled channels."
+            }
+        },
+
+        "enable": {
+            "description": "This action will enable the given alert channel.",
+            "usage": "```\n{prefix}config alerts enable <channel>\n```",
+            "examples": [
+                "To alert users if they used an unknown command:\n```\n{prefix}config alerts enable unknown\n```",
+                "To enable the lewd warning:\n```\n{prefix}config alerts enable lewd\n```"
+            ],
+
+            "success": {
+                "changed": "The alert channel `{0}` has been enabled.",
+                "unchanged": "The alert channel `{0}` is already enabled.",
+                "changes": "Alert channel `{0}` enabled. Alerts now have `{1}` enabled channels."
+            }
+        },
+
+        "disable": {
+            "description": "This action will disable the given alert channel.",
+            "usage": "```\n{prefix}config alerts disable <channel>\n```",
+            "examples": [
+                "To disable the lewd warning:\n```\n{prefix}config alerts disable lewd\n```",
+                "To disable alerts for blocked commands:\n```\n{prefix}config alerts disable blocked\n```"
+            ],
+
+            "success": {
+                "changed": "The alert channel `{0}` has been disabled.",
+                "unchanged": "The alert channel `{0}` is already disabled.",
+                "changes": "Alert channel `{0}` disabled. Alerts now have `{1}` disabled channels."
+            }
+        }
+    },
+
+    "allowautodelete": {
+    
+        "displayName": "Allow Autodelete",
+
+        "description": "Ralsei can automatically delete a command after it has been sent if a user appends a - before the prefix. Although this is very useful in roleplaying servers, it may be used as a tool for spam. If you want to universally turn this off, you can use this category. If you want to limit it to specific users, however, you can modify its permission (`msg-autodelete`) in the permissions category.",
+        "usage": "```\n{prefix}config allowautodelete <status>\n```\nYou may only use [`true`/`yes`/`on`/`0`] or [`false`/`no`/`off`/`1`] for `<status>`.",
+        "examples": [
+            "To disable autodeletion:\n```\n{prefix}config allowautodelete false\n```",
+            "To allow autodeletion:\n```\n{prefix}config allowautodelete on\n```"
+        ],
+
+        "inv-argc": "You have provided an invalid amount of arguments.",
+        "inv-args": "The arguments you provided are invalid.",
+
+        "success": {
+            "changed": "Auto-deletion status changed successfully.",
+            "unchanged": {
+                "allowed": "Autodeletion is already allowed.",
+                "prohibited": "Autodeletion is already prohibited."
+            },
+            "changes": {
+                "allowed": "Autodeletion of commands are now allowed.",
+                "prohibited": "Autodeletion of commands are now prohibited."
+            }
+        }
+    },
+
+    "blocklist": {
+
+        "displayName": "Blocklist",
+
+        "description": "You can block commands from running. This will block the command from being executed, no matter the permissions set on the `permission` category, and no matter the role. The only command that you're not allowed to block is the `config` command.",
+        "usage": "```\n{prefix}config blocklist <action> <value>\n```\nValid `action`s include `list`, `add`, `remove`, and `clear`. Running these without values will provide help.",
+        "examples": [
+            "To block the greeting command:\n```\n{prefix}config blocklist add hello\n```",
+            "To unblock the help command:\n```\n{prefix}config blocklist remove help\n```"
+        ],
+
+        "inv-action": "The given action is not a valid action. Valid `action`s include `list`, `add`, `edit`, `remove`, and `clear`.",
+        "inv-command": "The command you provided is not a valid command.",
+        "inv-unblockable": "`{0}` cannot be blocked.",
+
+        "list": {
+
+            "extra-args": "**NOTE**: The `list` action does not take any arguments.",
+            "none": "This server has no blocked commands.",
+            "intro": "These are the blocked commands on this server.",
+
+            "entry": "\u2022 `{0}` ({1})"
+
+        },
+
+        "clear": {
+
+            "description": "This will clear all blocked commands. If you want to go ahead, add a `Y` to the end of the command.",
+            "usage": "```\n{prefix}config blocklist clear Y\n```",
+            "examples": [
+                "To clear the blocklist:\n```\n{prefix}config blocklist clear Y\n```",
+                "Any other value instead of `Y` will not work."
+            ],
+
+            "improper": "Proper confirmation was not provided. To confirm the clear, please supply `Y` as the next argument, right after `clear`.",
+            "success": {
+                "changed": "The quick responses list has been cleared.",
+                "unchanged": "There were no configured quick responses to remove.",
+                "changes": "Blocklist now has `{0}` items."
+            }
+
+        },
+
+        "add": {
+
+            "description": "This action will add commands to the blocklist. Doing so will prevent any user from executing that given command, regardless of the permissions set in the `permissions` category. The only command that you cannot block is the `config` command.\n\n**NOTE**: If you block a quick response, all quick responses will also be blocked.",
+            "usage": "```\n{prefix}config blocklist add <command>\n```",
+            "examples": [
+                "To block the greeting command:\n```\n{prefix}config blocklist add hello\n```",
+                "To block the time-based greeting command:\n```\n{prefix}config blocklist add good morning\n```"
+            ],
+
+            "blocked": "`{0}` ({1}) is already blocked.",
+            "success": {
+                "changed": "The command `{0}` ({1}) has been blocked.",
+                "changes": "`{0}` blocked. Blocklist now has `{1}` commands."
+            }
+
+        },
+
+        "remove": {
+
+            "description": "This action will remove commands from the blocklist. Doing so will reallow any user to execute that given command, as long as they have the necessary permissions as set in the `permissions` category.",
+            "usage": "```\n{prefix}config blocklist remove <command>\n```",
+            "examples": [
+                "To unblock the greeting command:\n```\n{prefix}config blocklist remove hello\n```",
+                "To unblock the time-based greeting command:\n```\n{prefix}config blocklist remove good morning\n```"
+            ],
+
+            "unblocked": "`{0}` ({1}) is not blocked.",
+            "success": {
+                "changed": "The command `{0}` ({1}) has been removed from the blocklist.",
+                "changes": "`{0}` removed from blocklist. Blocklist now has `{1}` commands."
+            }
+
+        }
+
+    },
+
+    "meta": {
+
+        "displayName": "Meta",
+
+        "description": "You can export the server configuration into a configuration file, or import an existing configuration file into your configuration. Note that by importing, you will lose all your current configuration settings.",
+        "usage": "```\n{prefix}config meta <action>\n```\nValid `action`s include `import` and `export`.\n\nWhen importing, attach the configuration file with your command.",
+        "examples": [
+            "To export the configuration:\n```\n{prefix}config meta export\n```",
+            "To import a configuration:\n```\n{prefix}config meta import\n```"
+        ],
+
+        "inv-action": "The given action is not a valid action.",
+
+        "export": {
+            "bundling": "Please wait while we bundle the server configuration into a file. You'll receive the confiugration with the filename \"`{0}`\".",
+            "overload": "Your configuration file seems to be larger than 16 KB. This will cause issues with the importer. Please consider decreasing the amount of quick responses or permissions set in order to properly import your exported configuration."
+        },
+
+        "import": {
+            "inv-filec": "Please only attach one file, the configuration file, when executing `{prefix}config import`.",
+            "inv-files": "The configuration file is larger than 16 KB, which is the allowed limit. Please decrease the amount of quick responses or set permission rules in order to import the file.",
+
+            "dl-error": "There was an issue while downloading the configuration file. Please try again.",
+            "pr-error": "There was an issue while parsing the configuration file.\n```\n{0}\n```",
+
+            "success": "New configuration successfully imported."
+        }
+
+    },
+
+    "permissions": {
+
+        "displayName": "Permissions",
+
+        "description": "Server moderators may restrict certain functions of the Ralsei Bot to only a certain group of people, be it those who have a role, a permission, or those who are selected. These rules may also be combined with each other. This is useful for server owners who prefer to keep a hiearchy, or for server owners that want to prevent users from using the bot.",
+        "usage": "```\n{prefix}config permissions <action> [options]\n```\nValid actions include `list`, `set`, `unset`, and `reset`",
+        "examples": [
+            "To get more information about an action:\n```\n{prefix}config permissions <action>\n```"
+        ],
+
+        "readable": {
+            "invalid": "**INVALID**",
+            "positive": {
+                "everyone": "everyone",
+                "perm": "users with the {0} permission",
+                "roleid": "users belonging to role(s) with the ID(s): {0}",
+                "rolename": "users belonging to the role(s): {0}",
+                "userid": "users with the ID(s): {0}",
+                "usertag": "users with the user tag(s): {0}"
+            },
+            "negative": {
+                "everyone": "nobody",
+                "perm": "users without the {0} permission",
+                "roleid": "users not belonging to role(s) with the ID(s): {0}",
+                "rolename": "users not belonging to the role(s): {0}",
+                "userid": "users without the ID(s): {0}",
+                "usertag": "users without the user tag(s): {0}"
+            }
+        },
+
+        "inv-action": "Invalid action. Valid actions include `list`, `set`, `unset`, and `reset`.",
+        "inv-path": "You did not provide a valid [permission path]({0}). The permission path is a string consisting of dashes and letters that permit specific actions to be taken. For commands, you can see what are the permissions for each command on their respective help pages. Otherwise, you can see the configurable permissions at [the configuration manual]({0}).",
+
+        "list": {
+
+            "intro": "The following are your configured permissions.",
+            "defaults": "If you want to view your permissions list with the defaults included, please run the following command instead:\n```\n{prefix}config permissions list include-defaults [page]\n```",
+            "unchanged": "You have not modified the default permissions yet. If you want to view your permissions list with the defaults included, please run the following command instead:\n```\n{prefix}config permissions list include-defaults\n```",
+
+            "inv-page": "Invalid page number. You can only go between 1 and {0}.",
+
+            "page": {
+                "header": "Page",
+                "content": "Nodes {0} to {1} of {2}. Page {3} of {4}."
+            }
+
+        },
+
+        "set": {
+
+            "description": "Sets the permission for a specific path. A path is a string consisting of dashes and letters that permit specific actions to be taken. For commands, you can see what are the permissions for each command on their respective help pages. Otherwise, you can see the configurable permissions at the [configuration manual]({0}).",
+            "usage": "```\n{prefix}config permissions set <path> <permission>\n```",
+            "examples": [
+                "To restrict the \"greeting\" command to the role ID [123]:\n```\n{prefix}config permissions set cmd-greeting R{123}\n```",
+                "To only allow the \"Elites\" role to use the bot:\n```\n{prefix}config permissions set msg-use R{\"Elites\"}\n```",
+                "A tutorial on how to write permission strings can be found in the [configuration manual]({0})"
+            ],
+
+            "no-permstring": "You did not provide a [permission string]({0}). A tutorial on how to write permission strings can be found in the [configuration manual]({0}).",
+            "success": {
+                "changed": "`{0}` now restricted to:\n\n{1}",
+                "changes": "Restricted path `{0}` to those matching permission string: `{1}`. `{2}` custom permissions set."
+            }
+
+        },
+
+        "unset": {
+
+            "description": "Removes the set permission for the given path (which returns the path to its default permission). A path is a string consisting of dashes and letters that permit specific actions to be taken. For commands, you can see what are the permissions for each command on their respective help pages. Otherwise, you can see the configurable permissions at [the configuration manual]({0}}).\n\nIf you want to make a command accessible to all users when it is normally not, set the permission to `*` instead.",
+            "usage": "```\n{prefix}config permissions unset <path>\n```",
+            "examples": [
+                "To reset the \"cfg-prefix-set\" permission to the default:\n```\n{prefix}config permissions unset cmd-greeting\n```",
+                "A tutorial on how to write permission strings can be found in the [configuration manual]({0})."
+            ],
+
+            "extra-args": "You seem to have provided extra arguments. Please remove them to continue.",
+            "success": {
+                "changed": "Reset `{0}` to defaults.",
+                "changes": "Restricted path `{0}` to those matching permission string: `{1}`. `{2}` custom permissions set."
+            }
+
+        },
+
+        "reset": {
+
+            "description": "This resets all set permissions to their defaults. If you want to go ahead, add a `Y` to the end of the command.",
+            "usage": "```\n{prefix}config permissions reset Y\n```",
+            "examples": [
+                "To reset all permissions to their defaults:\n```\n{prefix}config permissions reset Y\n```",
+                "Any other value instead of `Y` will not work."
+            ],
+
+            "improper": "Proper confirmation was not provided. To confirm the clear, please supply `Y` as the next argument, right after `reset`.",
+            "success": {
+                "changed": "The server permissions table has been cleared.",
+                "unchanged": "The permissions table is already empty.",
+                "changes": "Permissions list cleared. `{0}` permissions set."
+            }
+
+        }
+
+    },
+
+    "prefix": {
+
+        "displayName": "Prefix",
+
+        "description": "The prefix category manages the server-specific prefix. Right now, the prefix is {prefixexp}. There is only one possible usage of this command for this category, as seen below. A prefix cannot contain a whitespace (line breaks, spaces, etc.).",
+        "usage": "```\n{prefix}config prefix <regex> <with space?>\n```\nYou may only use [`true`/`yes`/`on`/`0`] or [`false`/`no`/`off`/`1`] for `<with space?>`.",
+        "examples": [
+            "To turn the prefix into `r.`:\n```\n{prefix}config prefix r. false\n```",
+            "To turn the prefix into `!r `:\n```\n{prefix}config prefix !r 1\n```"
+        ],
+
+        "inv-argc": "You have provided an invalid amount of arguments.",
+        "inv-args": "The arguments you provided are invalid.",
+
+        "success": {
+            "changed": "Prefix changed successfully.",
+            "unchanged": "The prefix you provided is your existing prefix. Nothing to change here.",
+            "changes": "New prefix: {0}"
+        }
+
+    },
+
+    "quickresponses": {
+
+        "displayName": "Quick Responses",
+
+        "description": "You can create custom commands that work only for your server. These are called quick responses, as these specialized commands are quicker to user rather than having to generate a box.",
+        "usage": "```\n{prefix}config quickresponses <action> [options]\n```\nValid actions include `list`, `add`, `edit`, `remove`, and `clear`",
+        "examples": [
+            "To get more information about an action:\n```\n{prefix}config quickresponses <action>\n```"
+        ],
+
+        "inv-action": "The given action is not a valid action. Valid `action`s include `list`, `add`, `edit`, `remove`, and `clear`.",
+        "key-nospaces": "The keyword must not contain any whitespace.",
+
+        "list": {
+            "none": "You have not set up any quick responses.",
+            "intro": "These are your configured quick responses.",
+
+            "inv-page": "Invalid page number. You can only go between 1 and {0}.",
+
+            "page": {
+                "header": "Page",
+                "content": "Responses {0} to {1} of {2}. Page {3} of {4}."
+            }
+        },
+
+        "clear": {
+
+            "description": "This will remove all of your quick responses. If you want to go ahead, add a `Y` to the end of the command.",
+            "usage": "```\n{prefix}config quickresponses clear Y\n```",
+            "examples": [
+                "To remove all quick responses:\n```\n{prefix}config quickresponses clear Y\n```",
+                "Any other value instead of `Y` will not work."
+            ],
+
+            "improper": "Proper confirmation was not provided. To confirm the clear, please supply `Y` as the next argument, right after `clear`.",
+            "success": {
+                "changed": "The quick responses list has been cleared.",
+                "unchanged": "There were no configured quick responses to remove.",
+                "changes": "Quick responses now has `{0}` entries."
+            }
+
+        },
+
+        "add": {
+
+            "description": "This will add a quick response. The response that you will get from that response would be exactly what you would usually get when using `{prefix}say`. Keywords may not contain spaces.\n\n*NOTE: If you add a quick response with the same keyword as a secret command, the secret command will be inaccessible unless you remove the quick response.*",
+            "usage": "```\n{prefix}config quickresponses add <keyword> <response>\n```",
+            "examples": [
+                "A simple ping:\n```\n{prefix}config quickresponses add ping expression=happy Pong!\n```",
+                "A happy birthday greeting:\n```\n{prefix}config quickresponses add birthday character= Happy birthday, {{{0}}}! From {user}.\n```"
+            ],
+
+            "existing": "`{0}` is an existing keyword. Use the `edit` action instead.",
+            "success": {
+                "changed": "The quick response `{0}` has been added.",
+                "changes": "`{0}` added. Quick responses now has `{1}` entries."
+            }
+
+        },
+
+        "edit": {
+
+            "description": "This will edit an existing quick response. The response that you will get from that response would be exactly what you would usually get when using `{prefix}say`. Keywords may not contain spaces.\n\n*NOTE: If you add a quick response with the same keyword as a secret command, the secret command will be inaccessible unless you remove the quick response.*",
+            "usage": "```\n{prefix}config quickresponses edit <keyword> <response>\n```",
+            "examples": [
+                "Modify `ping` to show \"Hi!\" instead:\n```\n{prefix}config quickresponses edit ping Hi!\n```"
+            ],
+
+            "nonexistent": "`{0}` is not an existing response. Use the `add` command instead.",
+            "success": {
+                "changed": "The quick response `{0}` has been edited.",
+                "changes": "`{0}` edited.\nOld response:\n```\n{1}\n```\nNew response:\n```\n{2}\n```"
+            }
+
+        },
+
+        "remove": {
+
+            "description": "This action will remove an existing quick response.",
+            "usage": "```\n{prefix}config quickresponse remove <keyword>\n```",
+            "examples": [
+                "To remove the `fish` response:\n```\n{prefix}config quickresponses remove fish\n```"
+            ],
+
+            "nonexistent": "`{0}` is not an existing response.",
+            "success": {
+                "changed": "The quick response `{0}` has been removed.",
+                "changes": "`{0}` removed. Quick responses now has `{1}` entries."
+            }
+
+        }
+
+    }
+}

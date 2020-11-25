@@ -1,0 +1,202 @@
+{
+
+    "unknown": "expression=looking-down-sad Sorry, but I don't know this command...",
+
+    "ping": {
+        "calculating": "character= Ralsei is measuring the time it takes for messages to send...",
+        "negative": "expression=derp Woah! That's actually impossible!",
+        "instant": "expression=happy Woah! That's nearly instant!",
+        "excellent": "expression=happy That's very fast! Amazing!",
+        "verygood": "Looks like everything is going smoothly!",
+        "good": "expression=smile Umm...\nThat's good enough, right?",
+        "okay": "expression=smile-looking-down I think I can do better than that though...",
+        "bad": "expression=sad There's something really wrong here...",
+        "terrible": "expression=sad Sorry, but it's really taking me a while."
+    },
+
+    "servers": "I'm currently running on {0} servers!",
+    "shards": "I currently have {0} shards active!",
+
+    "encourage": {
+        "secretA": "expression=shocked BE GOSH DARN ENCOURAGED.",
+        "secretB": "Don't give up {0}! You have to stay color=yellow DETERMINED text=join color=white !",
+
+        "responses": [
+            "<box>expression=smile-blush The odds of you being born are 1 in 400 trillion, {0}!</box><box>expression=smile-blush You're luckier than you think!</box>",
+            "<box>expression=looking-down-blush Don't say mean things to yourself, {0}.</box><box>expression=smile-blush That's my friend you're talking about.</box>",
+            "expression=smile-blush Don't worry, {0}!\nI believe in you!",
+            "expression=smile-blush Don't fear, {0}! It'll be alright.",
+            "expression=smile-blush Don't sweat it, {0}! It'll be fine!",
+            "expression=smile-blush Be happy that you're here, {0}. You're amazing!",
+            "expression=smile-blush Don't forget, {0}, I'm with you in the dark.",
+            "expression=smile-blush You can do anything if you put your heart into it, {0}!",
+            "expression=smile-blush Don't lose hope, {0}!",
+            "expression=smile-blush You are the future, {0}!"
+        ]
+    },
+
+    "greeting": [
+        "Oh, hello there, {user}!",
+        "Hi, {user}!",
+        "Hello, {user}!",
+        "expression=looking-down-blush H-Hi, {user}!",
+        "expression=looking-down-blush H-Hello, {user}!",
+        "expression=default Oh, hello there, {user}.",
+        "expression=default Hi, {user}.",
+        "expression=default Hello, {user}.",
+        "expression=looking-down-blush H-Hi, {user}.",
+        "expression=looking-down-blush H-Hello, {user}."
+    ],
+
+    "farewell": [
+        "expression=smile Oh. Goodbye then, {user}! I'll miss you!",
+        "expression=smile Goodbye, {user}! I hope to see you again real soon!",
+        "expression=smile Bye-bye, {user}! Be safe at the Light World!",
+        "expression=smile Bye-bye, {user}! Come back soon!",
+        "expression=smile Goodbye, {user}! I'll see you later!",
+        "expression=smile Bye, {user}! I'll bake you a yummy cake when you get back!",
+        "expression=smile Be safe at the Light World, {user}!",
+        "expression=smile I'll see you again soon, {user}!",
+        "expression=smile Nice seeing you, {user}!",
+        "expression=smile Goodbye for now, {user}!"
+    ],
+
+    "love": [
+        "expression=smile-blush Aww. I love you, too, {user}!",
+        "expression=smile-blush I love you as well, {user}!",
+        "expression=smile-blush I love YOU, {user}!",
+        "expression=looking-down-blush I-I... I love you too, {user}!",
+        "expression=smile-blush Thank you so much, {user}! I love you, too! uwu",
+        "expression=smile-blush I love you too, {user}! Would you like a hug?",
+        "expression=smile-blush I love you too, {user}! *hugs*",
+        "expression=smile-blush I platonically love you too, {user}!",
+        "expression=smile-blush Thank you, {user}! I love you too.",
+        "expression=looking-down-blush I-I... love you too, {user}!"
+    ],
+
+    "timegreet": [
+        "Oh, -$greet$- -$time$- to you too, {user}!",
+        "Good -$time$- to you too, {user}!",
+        "-$greet$- -$time$-, {user}!",
+        "Good -$time$-, {user}!",
+        "Happy -$time$- to you too, {user}!",
+        "Top of the -$time$- to you, {user}!"
+    ],
+
+    "ask": {
+        "very-positive": [
+            "expression=happy Of course!\nI'm sure of it!",
+            "expression=happy That's definitely a yes from me!",
+            "expression=shocked Yes.",
+            "expression=shocked I'm positive.",
+            "expression=shocked Definitely.",
+            "expression=shocked I don't see why not.",
+            "expression=happy Yes!",
+            "expression=happy I'm positive!",
+            "expression=happy Definitely!",
+            "expression=happy I don't see why not!"
+        ],
+        "positive": [
+            "Probably yes.",
+            "expression=looking-down Maybe yes? I'm not sure...",
+            "expression=looking-down Hmm...\nMaybe yes?",
+            "<box>expression=looking-down Hmm...</box><box>Yeah, sure!</box>",
+            "<box>expression=looking-down-blushing Yes... Probably...</box>",
+            "expression=looking-down Most likely...",
+            "expression=expressionless Yes?"
+        ],
+        "uncertain": [
+            "expression=looking-down Hmm...",
+            "expression=looking-down Maybe...",
+            "expression=looking-down Probably...",
+            "expression=looking-down Let me think for a bit...",
+            "expression=expressionless Maybe.",
+            "expression=expressionless Maybe?",
+            "expression=expressionless Probably.",
+            "expression=expressionless Probably?"
+        ],
+        "negative": [
+            "expression=expressionless Probably no.",
+            "expression=looking-down Maybe no? I'm not sure...",
+            "expression=looking-down Hmm...\nMaybe no?",
+            "<box>expression=looking-down Hmm...</box><box>expression=expressionless Yeah, no.</box>",
+            "<box>expression=looking-down-blushing No... Probably not...</box>",
+            "expression=looking-down Most likely not...",
+            "expression=expressionless No?"
+        ],
+        "very-negative": [
+            "expression=expressionless Of course not!\nI'm sure of it!",
+            "expression=expressionless That's definitely a no from me!",
+            "expression=shocked No.",
+            "expression=shocked I'm positive that's a no.",
+            "expression=shocked Definitely not.",
+            "expression=angry No!",
+            "expression=angry Definitely not!"
+        ]
+    },
+
+    "requesthug": {
+        "intro": [
+            "Ralsei gives {0} a hug.",
+            "Ralsei surprises {0} with a tight hug.",
+            "Ralsei hugs {0} from behind.",
+            "Ralsei hugs {0}.",
+            "Ralsei gives {0} a big hug.",
+            "Ralsei shyly hugs {0}.",
+            "Ralsei approaches {0} for a hug."
+        ],
+
+        "default": [
+            "Ralsei feels soft and fluffy.",
+            "Ralsei appreciates it.",
+            "They don't want to let go.",
+            "Fluffiness shines within them.",
+            "Such a sweet boy.",
+            "Very nice.",
+            "Ralsei won't let go.",
+            "He's insterested in another.",
+            "They got tired!",
+            "They were pacified!"
+        ]
+    },
+
+    "givehug": [
+        "<box>expression=looking-down-blush {userfc}-{user}? Are you...</box><box>expression=smile-blush Aww. You're sweeter than Dark Candy! Thank you, {user}!</box>",
+        "expression=smile-blush Woah! I didn't expect that, but I appreciate it, {user}!",
+        "<box>expression=smile-blush Aww. Thanks, {user}!</box><box>expression=looking-down-blush C-Can we hug again? I... I really liked that.</box>",
+        "expression=smile-blush {user}! You didn't have to! Thank you!"
+    ],
+
+    "thank": [
+        "expression=happy Oh! No problem at all, {user}!",
+        "expression=happy You're welcome, {user}!",
+        "expression=happy Anytime, {user}!"
+    ],
+
+    "kitchen":  {
+        "microwave": {
+            "success": "<box>Here's your {0}, {user}!</box><box>character= Ralsei gives you a bowl of {0}.</box>"
+        },
+        "oven": {
+            "normal": "<box>expression=happy Here's your {0}, {user}!</box><box>I hope you like it.</box>",
+            "instant": "<box>expression=happy Here's your {0}, {user}!</box><box>expression=smile-looking-down Oh. It looks a bit burnt...</box>"
+        }
+    },
+
+    "fluffy": [
+        "expression=looking-down-blush Oh! Um... Thank you, {user}!"
+    ],
+
+    "disgustblock": [
+        "character= No."
+    ],
+
+    "lewdwarn": [
+        "expression=derp Stop. No lewds.",
+        "expression=derp stop. no lewds.",
+        "expression=derp what",
+        "expression=derp why",
+        "expression=derp that's gross"
+    ]
+
+}

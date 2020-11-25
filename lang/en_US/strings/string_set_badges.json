@@ -1,0 +1,44 @@
+{
+
+    "owner": {
+        "title": "Owner",
+        "description": "Owns the bot and is the project leader for the Discord Ralsei Bot project.",
+        "emoji": "<:badge_owner:739487487277269022>"
+    },
+    "developer": {
+        "title": "Developer",
+        "description": "An active developer for the Ralsei Bot.",
+        "emoji": "<:badge_developer:739487486560174151>"
+    },
+    "formerdeveloper": {
+        "title": "Former Developer",
+        "description": "A developer who formerly worked on the Ralsei Bot, but no longer actively develops it.",
+        "emoji": "<:badge_formerdeveloper:739487488334364672>"
+    },
+    "contributor": {
+        "title": "Contributor",
+        "description": "A major contributor to the Ralsei Bot, its commands, features, or functionality.",
+        "emoji": "<:badge_contributor:739487486396334161>"
+    },
+    "bugfinder": {
+        "title": "Bugfinder",
+        "description": "A user who found a bug with the Ralsei Bot and reported it to the development team.",
+        "emoji": "<:badge_bugfinder:739487486652448798"
+    },
+    "vip": {
+        "title": "VIP",
+        "description": "Users who one or multiple developers find essential. VIPs have their own dedicated commands.",
+        "emoji": "<:badge_vip:739487486840930344>"
+    },
+    "detective": {
+        "title": "Detective",
+        "description": "Found all secret commands that the bot has.",
+        "emoji": "<:badge_detective:739487486576951337>"
+    },
+    "formerdetective": {
+        "title": "Former Detective",
+        "description": "Previously found all secret commands that the bot then had, but has not found a newly added secret command.",
+        "emoji": "<:badge_formerdetective:739487486958501939>"
+    }
+
+}

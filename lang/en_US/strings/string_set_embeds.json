@@ -1,0 +1,464 @@
+{
+    "global": {
+        "footer": "<> with \u2665 by {0}/about",
+        "version": "version {0}"
+    },
+
+    "error": {
+
+        "title": "oopsie!! i did a ducky-wucky!!",
+        "header": "Ralsei Bot Command Handler",
+        "description": "The Ralsei Bot seems to have had an error in processing your request. Rest assured, we will eventually analyze what exactly happened here.\n\nIf you want to ask for support for this issue, you can join the bot's [support server]({0}) and ask for help there.\n\n**Reference code: `{1}`**"
+
+    },
+
+    "timeout": {
+
+        "title": "there's not enough time in the world!",
+        "header": "Ralsei Bot Command Handler",
+        "description": "The Ralsei Bot seems to have taken too long in processing your request, so we had to end it. Rest assured, we will eventually analyze what exactly happened here.\n\nIf you want to ask for support for this issue, you can join the bot's [support server]({0}) and ask for help there.\n\n**Reference code: `{1}`**"
+
+    },
+
+    "no-access": {
+
+        "title": "Invalid Access",
+        "header": "Ralsei Bot Command Handler",
+        "description": "You do not have access to the command that you are trying to run. If you think this is a mistake, contact your server administror or the bot developers."
+    },
+
+    "blocked": {
+
+        "title": "Blocked",
+        "header": "Ralsei Bot Command Handler",
+        "description": "This command has been blocked by the server moderators."
+
+    },
+
+    "server-only": {
+
+        "title": "Server-Only Command",
+        "content": "This command may only be executed in servers."
+
+    },
+
+    "badges": {
+
+        "earned": "Badge Earned",
+        "lost": "Badge Lost",
+        "switched": {
+            "title": "Badge Switched",
+            "description": "Since you no longer qualify for the badge \"**{0}**\", we've removed the previous badge and put another one in its place."
+        }
+
+    },
+
+    "user": {
+
+        "header": "Information on {0}",
+        "header-plain": "User Information",
+
+        "error": {
+            "not-found": "The given user doesn't seem to be in any server with Ralsei, or doesn't exist.",
+            "invalid-args": "You have provided an invalid amount of arguments. The only argument should be a user mention."
+        },
+
+        "id": "ID: `{0}`",
+        "not-storing": {
+            "header": "Not storing data",
+            "description": ":x: The Ralsei Bot is not storing this user's data (aside from their ID and a \"do not store\" flag) at the user's request."
+        },
+
+        "badges": "Badges"
+
+    },
+
+    "award-badge": {
+
+        "header": "Award Badge",
+
+        "error": {
+            "invalid-args": "You have provided an invalid amount of arguments. You must provide an award, then a user.",
+            "not-mention": "The first argument must be a mention of a user, or a valid user ID.",
+            "not-found": "The given user doesn't seem to be in any server with Ralsei, or doesn't exist.",
+            "not-badge": "The given badge is not a valid badge name.",
+            "dnt": "The user requested not to store their data, so badges cannot be given.",
+            "awarded": "This badge is already awarded to the specified user."
+        },
+
+        "awarded": "The \"**{0}**\" badge has been awarded to **{1}**.",
+
+        "badges": "New Badges"
+
+    },
+
+    "revoke-badge": {
+
+        "header": "Revoke Badge",
+
+        "error": {
+            "invalid-args": "You have provided an invalid amount of arguments. You must provide an award, then a user.",
+            "not-mention": "The first argument must be a mention of a user, or a valid user ID.",
+            "not-found": "The given user doesn't seem to be in any server with Ralsei, or doesn't exist.",
+            "not-badge": "The given badge is not a valid badge name.",
+            "dnt": "The user requested not to store their data, so badges cannot be given.",
+            "missing": "The user does not have the specified badge."
+        },
+
+        "revoked": "The \"**{0}**\" badge has been revoked from **{1}**.",
+
+        "badges": "New Badges",
+        "no-badges": "*This user does not have any badges.*"
+
+    },
+
+    "introduction": {
+        "description": "Thank you for adding the Ralsei Bot to your server!",
+        "basics": {
+            "header": "Basics",
+            "content": "The prefix for this server is `{prefix}`. You can change this anytime. To get a list of commands, click [here]({0}/commands) or run `{prefix}help`."
+        },
+        "configuration": {
+            "header": "Configuration",
+            "content": "A moderator that can manage channels or the server can modify the bot's configuration. The configuration can be modified with `{prefix}config`, and instructions on how to configure the bot are written [here]({0}/configuration)."
+        },
+        "finalNotes": {
+            "header": "Final Notes",
+            "content": "Again, thank you for adding this bot. We hope you have an enjoyable experience! If you have any questions, feel free to message the creator of the bot, <@{0}> (@{1}#{2}), or join the [official Ralsei Bot support server]{3}, so we can get back to you."
+        }
+    },
+
+    "help": {
+        "header": "Ralsei Bot Help",
+        "description": "{0}\n\nPermission: `{1}`",
+        "botUsage": {
+            "header": "Usage",
+            "content": "The prefix for this server is `{prefix}` ({0}) You can check the documentation at the [bot website]({1}).\n\nIf you would like help with a specific command, you should run `{prefix}help <command>` (e.g. for example, `{prefix}help hello`.)"
+        },
+        "trivia": "And Now A Message From Our Sponsors",
+
+        "usage": {
+            "header": "Usage",
+            "content": "```{0}```"
+        },
+        "aliases": {
+            "header": "Aliases"
+        },
+        "attributes": {
+            "header": "Attributes"
+        },
+
+        "failures": {
+            "access": "Sorry, but we can't show help or information for a command that you cannot access.",
+            "unknown": {
+                "header": "Unknown Command",
+                "content": "The command you entered doesn't seem to exist. We can't get you help for that, sadly."
+            }
+        }
+    },
+
+    "information": {
+
+        "title": "Ralsei Bot Info",
+        "bot": {
+            "header": "Bot Information",
+            "content": "A flexible and responsive Discord bot that represents the DELTARUNE character, Ralsei."
+        },
+        "usage": {
+            "header": "Usage",
+            "content": "The prefix for this server is `{prefix}`. You can check the documentation at the [bot website]({0})."
+        },
+        "dev": {
+            "header": "Devlopment Information",
+            "content": "Developed by Chlod Alejandro (@ChlodAlejandro#9493)\nDevelopment started on November 17, 2018, 1:44:15 PM UTC\nReleased on November 17, 2018, 5:01:39 PM UTC (Reddit)\nAvatar created by OmarTheNerd."
+        },
+        "support": {
+            "header": "Help and Support",
+            "content": "If you have an issue, hit us up on [@DiscordRalsei]({0}) on Twitter or join the [support server]({1}).\nIf you would like to see the list of commands, visit [this page]({2})."
+        },
+        "credits": {
+            "header": "Credits",
+            "content": "Uses Demirramon's [Undertale Text Box Generator]({0}).\nRALSEI and DELTARUNE are by [Toby Fox]({1}).\nThe full credits can be found [here]({2}}).\n\n[Privacy Policy]({3})"
+        }
+
+    },
+
+    "characters": {
+
+        "title": "Undertale Text Box Generator by Demirramon",
+        "content": "The Ralsei bot uses Demirramon's Undertale Text Box Generator to create its text boxes.\n\nClick [here]({0}) for a full list of all the supported characters and expressions."
+
+    },
+
+    "ping": {
+        "title": "Ralsei Bot Ping",
+        "calculating": "Calculating..."
+    },
+
+    "support": {
+
+        "title": "Ralsei Bot Support",
+
+        "intro": "Is Ralsei acting up? Or maybe you want to suggest something? Here's a few ways you can contact us.",
+        "server": "Official Ralsei Bot Server",
+        "website": "Help Page - Ralsei Bot Website",
+        "twitter": "@DiscordRalsei on Twitter",
+
+        "direct": {
+            "intro": "If you'd like to take the direct route, you can also message the developers.",
+            "devs": "Developers on the About Page"
+        }
+
+    },
+
+    "leave": {
+
+        "warning": {
+            "header": "***WARNING***",
+            "notice": "You are about to make the Ralsei Bot leave your server. This will also remove your configuration settings. If you do not want to lose your configuration, export it first.",
+            "confirmation": "To confirm, please send the following command. After which, Ralsei will leave the server.",
+            "command": "{prefix} leave {0}",
+            "expiry": "The code will expire in 30 seconds."
+        },
+
+        "failures": {
+            "inv-code": "The code that you provided is invalid. Please run `{prefix}leave` again with no arguments to get another code.",
+            "inc-code": {
+                "notice": "The code that you provided is incorrect. Please enter the command with the correct parameters, or run `{prefix}leave` again with no arguments.",
+                "expiry": "The code will expire in **{0}**."
+            },
+            "exp-code": "The code has already expired. Please run `{prefix}leave` again with no arguments to get another code."
+        },
+
+        "success": "Thank you for using the Ralsei Bot. We hope that you enjoyed your time with Ralsei. If you are able to, please answer our [exit survey]({0}) and tell us why you decided to remove Ralsei from your server.\n\nWe hope to see you again soon. Farewell!"
+
+    },
+
+    "system": {
+
+        "title": "Ralsei Bot System Information",
+        "notice": "Please note that other processes on the same server may also affect the statistics on this command.",
+
+        "cpu": {
+            "header": "CPU Usage",
+            "content": "{0}%"
+        },
+        "mem": {
+            "header": "Memory Usage",
+            "content": "{0}/{1} GB ({2}% used)"
+        },
+        "bot": {
+            "header": "Bot Usage",
+            "content": "{0} MB (for {1} shards)"
+        },
+        "stats": {
+            "header": "Bot Stats",
+            "content": "Uptime: {0}"
+        }
+
+    },
+
+    "uptime": {
+
+        "title": "Ralsei Bot Uptime",
+        "content": "The bot has been up for {0} (since {1})",
+        "format": "llll"
+
+    },
+
+    "kitchen": {
+
+        "unspecified": {
+            "title": "Ralsei's Kitchen"
+        },
+
+        "microwave": {
+            "title": "Ralsei's Microwave",
+
+            "supplies": "Taking the {0} out of the fridge...",
+            "heating": "Heating up the {0}...",
+            "heated": "{0} heated up! (took {1}).",
+
+            "soup": {
+                "emoji": ":bowl_with_spoon:"
+            },
+
+            "burrito": {
+                "emoji": ":burrito:"
+            }
+        },
+
+        "oven": {
+            "title": "Ralsei's Oven",
+
+            "supplies": "Ralsei is currently buying more supplies. Please wait a moment.",
+            "preparing": "Preparing the required materials...\n\n{0}",
+            "mixing": "Mixing the ingredients...",
+            "baking": "Baking the {0}.",
+            "instant-baking": "Baking the {0}.\n\nINSTANT BAKING MODE ACTIVATED",
+            "cool-start": "Taking the {0} out of the oven...",
+            "cooling": "Letting the {0} cool.",
+            "done": "Done!",
+
+            "time": "Baked in {0}.",
+            "time-special": "Baked in {0} under Instant Baking Mode, a 1 in 5000 chance!",
+
+            "cake": {
+                "emoji": ":cake:",
+                "supplies": [
+                    "1 & 1/2 cups of all-purpose flour",
+                    "1 cup of white sugar",
+                    "1/2 cup of butter",
+                    "1/2 cup of milk",
+                    "1 & 3/4 teaspoons of baking powder",
+                    "2 eggs",
+                    "2 teaspoons of vanilla extract"
+                ]
+            },
+            "cookies": {
+                "emoji": ":cookie:",
+                "supplies": [
+                    "2 & 1/4 cups of all-purpose flour",
+                    "1 teaspoon of baking soda",
+                    "1/2 teaspoon of salt",
+                    "1 & 1/2 teaspoons of cornstarch",
+                    "3/4 cups of butter",
+                    "3/4 cups of brown sugar",
+                    "1/2 cup of granulated sugar",
+                    "1 & 1/4 cups of chocolate chips",
+                    "2 eggs (1 whole and 1 yolk)",
+                    "2 teaspoons of vanilla extract"
+                ]
+            },
+            "pie": {
+                "emoji": ":pie:",
+                "supplies": [
+                    "3 tablespooons of all-purpose flour",
+                    "1 teaspoon of ground cinnamon",
+                    "1/4 teaspoon of ground ginger",
+                    "1/4 teaspoon of ground nutmeg",
+                    "1 tablespoon of butter",
+                    "1/2 cup of brown sugar",
+                    "1/2 cup of normal sugar",
+                    "7 peeled apples",
+                    "1 large egg white"
+                ]
+            }
+        }
+
+    },
+
+    "prefixinfo": {
+        "with-space": "Hey, {userm}! The prefix for this server is `{0}` (yes, with the space.)",
+        "without-space": "Hey, {userm}! The prefix for this server is `{0}` (without any spaces.)"
+    },
+
+    "configuration": {
+        "title": "Configuration",
+        "full-title": "Ralsei Bot Configuration",
+        "specific-title": "Configuration - {0}",
+        "changes": "Changes",
+
+        "no-access": "Sorry, but you don't have the required permission to access this configuration action.",
+        "invalid-cat": "You have provided an invalid category. Please check if the category you specified is in the list of approved categories.",
+
+        "intro": "You are free to configure the Ralsei Bot to your needs. If you need help with configuring things, you can visit [the configuration manual]({0}) for more information. When configuring, please do **NOT** include the brackets (`[` and `]`) or angle brackets (`<` and `>`).",
+
+        "usage": {
+            "header": "Usage",
+            "content": "```\n{prefix}config [category] [key] [value]\n```"
+        },
+
+        "categories": {
+            "header": "Categories",
+            "content": "You may configure the following categories."
+        },
+
+        "categoryNames": {
+            "prefix": "Prefix",
+            "allowAutodelete": "Allow Command Auto-Delete",
+            "blocklist": "Blocklist",
+            "alerts": "Alerts",
+            "permissions": "Permissions",
+            "quickresposnes": "Quick Responses (previously known as `quicksay`)",
+            "meta": "Configuration Meta",
+            "log": "Log"
+        }
+    },
+
+    "dropbox": {
+
+        "header": "Ralsei Bot Dropbox",
+
+        "no-args": {
+            "report": "To submit a report, you need to type in a message about whatever you're reporting about. For example:\n```\n{prefix}report There's a bug with the `exception` command, in which if you try to run it, the bot reports that there was an issue in running the command.\n```\nIf you would like to submit security reports or anything that you want to keep exclusively private, **you must email [ralsei@chlod.net](mailto:ralsei@chlod.net) instead**.",
+            "suggestion": "To submit a suggestion, you need to type in a message about whatever you're suggesting. For example:\n```\n{prefix}suggest Make Ralsei bake cookies!\n```"
+        },
+
+        "submit": {
+            "report": "Your report has been successfully submitted.",
+            "suggestion": "Your suggestion has been successfully submitted."
+        },
+
+        "get": {
+            "entry-invalid": "You did not provide a valid report or suggestion ID."
+        },
+
+        "reply": {
+            "entry-invalid": "You did not provide a valid feedback ID.",
+            "message-invalid": "You did not provide a valid message to reply with.",
+
+            "sent": "Your reply has been sent to the reporter ({0}).",
+            "received": "Your feedback has been replied to by a developer ({0}).",
+
+            "reply": "Reply"
+        },
+
+        "status-change": {
+            "entry-invalid": "You did not provide a valid feedback ID.",
+            "message-invalid": "You did not provide a valid reason.",
+
+            "same": "The status you're trying to set this case to is its current status.",
+
+            "inprogress": {
+                "sent": "Marked the case as \"In Progress\" and informed the reporter ({0}).",
+                "received": "Hello! Your feedback has been reviewed by a developer ({0}) and is now in progress."
+            },
+            "resolved": {
+                "sent": "Resolved the case and informed the reporter ({0}).",
+                "received": "Hello! Your feedback has been marked as resolved by a developer ({0})."
+            },
+            "denied": {
+                "sent": "Denied the case and informed the reporter ({0}).",
+                "received": "Hello! Your feedback has unfortunately been denied by a developer ({0})."
+            },
+
+            "reason": "Reason"
+        },
+
+        "entry": {
+            "id": {
+                "report": "Report ID",
+                "suggestion": "Suggestion ID"
+            },
+            "time": "Date Submitted",
+            "reporter": "Submitted by",
+            "details": "Details",
+            "status": {
+                "title": "Status",
+                "unresolved": ":hourglass_flowing_sand: Unresolved (awaiting developer response)",
+                "inprogress": ":clock10: In Progress",
+                "resolved": ":white_check_mark: Resolved",
+                "denied": ":x: Denied",
+                "reason": "*{0}*"
+            }
+        }
+
+    },
+
+    "encourage": {
+        "title": "Ralsei Bot Encourager",
+        "chance": "Congratulations, you got the secret encouragement! ({0} chance)"
+    }
+
+}
