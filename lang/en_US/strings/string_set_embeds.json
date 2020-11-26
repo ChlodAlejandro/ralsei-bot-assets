@@ -15,15 +15,14 @@
     "ratelimit": {
 
         "title": "hold your horses, cowboy!",
-        "header": "Ralsei Bot Command Handler",
         "description": "Whoops! This command seems to have been run too often recently. Please try again in {0}.",
         "extras": {
             "title": "Limit Details",
             "scope": {
                 "title": "**Scope**: {0}",
                 "shard": "Shard-wide",
-                "server": "Server-wide",
-                "user": "For {0} only"
+                "server": "Server ({0}) only",
+                "user": "User ({1}) only"
             },
             "interval": "**Interval**: {0}",
             "limit": "**Limit**: {0}"
