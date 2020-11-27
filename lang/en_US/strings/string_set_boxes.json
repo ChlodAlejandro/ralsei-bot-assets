@@ -175,11 +175,11 @@
 
     "kitchen":  {
         "microwave": {
-            "success": "<box>Here's your {0}, {user}!</box><box>character= Ralsei gives you a bowl of {0}.</box>"
+            "success": "<box>Here {0} your {1}, {user}!</box><box>character= Ralsei gives you {2}.</box>"
         },
         "oven": {
-            "normal": "<box>expression=happy Here's your {0}, {user}!</box><box>I hope you like it.</box>",
-            "instant": "<box>expression=happy Here's your {0}, {user}!</box><box>expression=smile-looking-down Oh. It looks a bit burnt...</box>"
+            "normal": "<box>expression=happy Here {0} your {1}, {user}!</box><box>I hope you like it.</box>",
+            "instant": "<box>expression=happy Here {0} your {1}, {user}!</box><box>expression=smile-looking-down Oh. It looks a bit burnt...\nIs that okay?</box>"
         }
     },
 

@@ -299,10 +299,12 @@
             "heated": "{0} heated up! (took {1}).",
 
             "soup": {
+                "countable": "a bowl of soup",
                 "emoji": ":bowl_with_spoon:"
             },
 
             "burrito": {
+                "countable": "a burrito",
                 "emoji": ":burrito:"
             }
         },
@@ -314,7 +316,7 @@
             "preparing": "Preparing the required materials...\n\n{0}",
             "mixing": "Mixing the ingredients...",
             "baking": "Baking the {0}.",
-            "instant-baking": "Baking the {0}.\n\nINSTANT BAKING MODE ACTIVATED",
+            "instant-baking": "Baking the {0}.\n\nINSTANT BAKING MODE",
             "cool-start": "Taking the {0} out of the oven...",
             "cooling": "Letting the {0} cool.",
             "done": "Done!",
