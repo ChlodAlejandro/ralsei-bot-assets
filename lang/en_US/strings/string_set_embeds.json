@@ -480,6 +480,12 @@
     "encourage": {
         "title": "Ralsei Bot Encourager",
         "chance": "Congratulations, you got the secret encouragement! ({0} chance)"
-    }
+    },
 
+    "changelog": {
+
+        "title": "Update 2.0",
+        "content": "The 2.0 update of Ralsei Bot was released on March 7, 2021. A full list of changes can be found [on the bot website]({0})."
+
+    }
 }
