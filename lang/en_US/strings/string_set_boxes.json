@@ -137,26 +137,26 @@
 
     "requesthug": {
         "intro": [
-            "Ralsei gives {0} a hug.",
-            "Ralsei surprises {0} with a tight hug.",
-            "Ralsei hugs {0} from behind.",
-            "Ralsei hugs {0}.",
-            "Ralsei gives {0} a big hug.",
-            "Ralsei shyly hugs {0}.",
-            "Ralsei approaches {0} for a hug."
+            "character= Ralsei gives {0} a hug.",
+            "character= Ralsei surprises {0} with a tight hug.",
+            "character= Ralsei hugs {0} from behind.",
+            "character= Ralsei hugs {0}.",
+            "character= Ralsei gives {0} a big hug.",
+            "character= Ralsei shyly hugs {0}.",
+            "character= Ralsei approaches {0} for a hug."
         ],
 
         "default": [
-            "Ralsei feels soft and fluffy.",
-            "Ralsei appreciates it.",
-            "They don't want to let go.",
-            "Fluffiness shines within them.",
-            "Such a sweet boy.",
-            "Very nice.",
-            "Ralsei won't let go.",
-            "He's insterested in another.",
-            "They got tired!",
-            "They were pacified!"
+            "character= Ralsei feels soft and fluffy.",
+            "character= Ralsei appreciates it.",
+            "character= They don't want to let go.",
+            "character= Fluffiness shines within them.",
+            "character= Such a sweet boy.",
+            "character= Very nice.",
+            "character= Ralsei won't let go.",
+            "character= He's insterested in another.",
+            "character= They got tired!",
+            "character= They were pacified!"
         ]
     },
 
