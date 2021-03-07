@@ -54,10 +54,6 @@
                 },
                 "unset": "Permissions not set (must be in complete mode).",
                 "not-object": "Permissions must be an object, containing permission paths mapped to permission strings."
-            },
-            "log": {
-                "unset": "Log settings not set (must be in complete mode).",
-                "bad-type": "Log must be a boolean or an object with log settings."
             }
         }
     },
@@ -164,7 +160,7 @@
     },
 
     "allowautodelete": {
-    
+
         "displayName": "Allow Autodelete",
 
         "description": "Ralsei can automatically delete a command after it has been sent if a user appends a - before the prefix. Although this is very useful in roleplaying servers, it may be used as a tool for spam. If you want to universally turn this off, you can use this category. If you want to limit it to specific users, however, you can modify its permission (`msg-autodelete`) in the permissions category.",
@@ -415,6 +411,7 @@
 
         "inv-argc": "You have provided an invalid amount of arguments.",
         "inv-args": "The arguments you provided are invalid.",
+        "inv-length": "The length of the prefix you provided is beyond the limit (14 characters).",
 
         "success": {
             "changed": "Prefix changed successfully.",
