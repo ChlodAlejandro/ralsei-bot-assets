@@ -79,7 +79,7 @@
 
         "error": {
             "not-found": "The given user doesn't seem to be in any server with Ralsei, or doesn't exist.",
-            "invalid-args": "You have provided an invalid amount of arguments. The only argument should be a user mention."
+            "invalid-args": "You have provided an invalid amount of arguments. The only argument should be a user mention or a user's ID."
         },
 
         "id": "ID: `{0}`",
