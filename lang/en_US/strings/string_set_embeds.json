@@ -135,15 +135,15 @@
         "description": "Thank you for adding the Ralsei Bot to your server!",
         "basics": {
             "header": "Basics",
-            "content": "The prefix for this server is `{prefix}`. You can change this anytime. To get a list of commands, click [here]({0}/commands) or run `{prefix}help`."
+            "content": "The prefix for this server is `{0}`. You can change this anytime. To get a list of commands, click [here]({1}/commands) or run `{0}help`."
         },
         "configuration": {
             "header": "Configuration",
-            "content": "A moderator that can manage channels or the server can modify the bot's configuration. The configuration can be modified with `{prefix}config`, and instructions on how to configure the bot are written [here]({0}/configuration)."
+            "content": "A moderator that can manage channels or the server can modify the bot's configuration. The configuration can be modified with `{0}config`, and instructions on how to configure the bot are written [here]({1}/configuration)."
         },
         "finalNotes": {
             "header": "Final Notes",
-            "content": "Again, thank you for adding this bot. We hope you have an enjoyable experience! If you have any questions, feel free to message the creator of the bot, <@{0}> (@{1}#{2}), or join the [official Ralsei Bot support server]{3}, so we can get back to you."
+            "content": "Again, thank you for adding this bot. We hope you have an enjoyable experience! If you have any questions, feel free to message the creator of the bot, <@{0}> (@{1}#{2}), or join the [official Ralsei Bot support server]({3}), so we can get back to you."
         }
     },
 
