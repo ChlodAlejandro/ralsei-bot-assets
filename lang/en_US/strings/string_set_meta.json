@@ -11,7 +11,7 @@
 
     "presence": {
         "starting": "Starting... [{0}/{1}]",
-        "normal": "with {0} servers | v{1} | !ralsei help",
+        "normal": "in {0} servers | !ralsei help",
         "updating": "Updating...",
         "waiting": "Please wait...",
         "maintenance": "Under maintenance (ralsei.chlod.net/status)",
