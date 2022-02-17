@@ -249,7 +249,7 @@
             "exp-code": "The code has already expired. Please run `{prefix}leave` again with no arguments to get another code."
         },
 
-        "success": "Thank you for using the Ralsei Bot. We hope that you enjoyed your time with Ralsei. If you are able to, please answer our [exit survey]({0}) and tell us why you decided to remove Ralsei from your server.\n\nWe hope to see you again soon. Farewell!"
+        "success": "Thank you for using the Ralsei Bot. We hope that you enjoyed your time with Ralsei.\n\nWe hope to see you again soon. Farewell!"
 
     },
 
