@@ -1,0 +1,202 @@
+{
+
+    "unknown": "expression=looking-down-sad Вибач, але я не знаю такої команди...",
+
+    "ping": {
+        "calculating": "character= Ральзей вимірює час, потрібний для надсилання повідомлень...",
+        "negative": "expression=derp Йой! Насправді це неможливо!",
+        "instant": "expression=happy Йой! Майже миттєво!",
+        "excellent": "expression=happy Це дуже швидко! Вражаюче!",
+        "verygood": "Схоже, все йде як по маслу!",
+        "good": "expression=smile Умм...\nЦього не достатньо, правда ж?",
+        "okay": "expression=smile-looking-down Гадаю, я можу зробити краще, ніж це...",
+        "bad": "expression=sad Тут щось не так...",
+        "terrible": "expression=sad Вибач, але це справді займе в мене трохи часу."
+    },
+
+    "servers": "Наразі я працюю на {0} серверах!",
+    "shards": "Зараз я маю {0} дійсних осколків!",
+
+    "encourage": {
+        "secretA": "expression=shocked ХАЙ ТОБІ ГРЕЦЬ З ЦІЄЮ ВПЕВНЕНІСТЮ.",
+        "secretB": "Не здавайся, {0}! Ти маєш лишатися з color=yellow РІШУЧУСТЮ text=join color=white !",
+
+        "responses": [
+            "<box>expression=smile-blush Імовірність того, що ти народишся, становить 1 до 400 трильйонів, {0}!</box><box>expression=smile-blush Тобі щастить більше, ніж ти думаєщ!</box>",
+            "<box>expression=looking-down-blush Не нарікай на себе, {0}.</box><box>expression=smile-blush Це мій друг, про якого ти говориш.</box>",
+            "expression=smile-blush Не хвилюйся, {0}!\nЯ вірю в тебе!",
+            "expression=smile-blush Не бійся, {0}! Все буде добре.",
+            "expression=smile-blush Не переймайся за це, {0}! Все буде гаразд!",
+            "expression=smile-blush Радій, що ти тут, {0}. Ти просто диво!",
+            "expression=smile-blush Не забудь, {0}, з тобою я в пітьмі.",
+            "expression=smile-blush Ти можеш зробити все, якщо вкладаш в це свою душу, {0}!",
+            "expression=smile-blush Не втрачай надії, {0}!",
+            "expression=smile-blush Ти маше майбутнє, {0}!"
+        ]
+    },
+
+    "greeting": [
+        "Йой, мої вітання, {user}!",
+        "Привіт, {user}!",
+        "Вітаннячко, {user}!",
+        "expression=looking-down-blush П-привіт, {user}!",
+        "expression=looking-down-blush В-вітаю, {user}!",
+        "expression=default Йой, вітаннячко, {user}.",
+        "expression=default Привіт, {user}.",
+        "expression=default Вітаю, {user}.",
+        "expression=looking-down-blush П-привіт, {user}.",
+        "expression=looking-down-blush В-вітаю, {user}."
+    ],
+
+    "farewell": [
+        "expression=smile Оу. Що ж, бувай тоді, {user}! Я буду сумувати!",
+        "expression=smile До зустрічі, {user}! Сподіваюся, скоро побачимось знову!",
+        "expression=smile Па па, {user}! Будь обережніше в Сонячному світі!",
+        "expression=smile Па па, {user}! Повертайся скоріше!",
+        "expression=smile Бувай, {user}! Побачимось пізніше!",
+        "expression=smile Бувай, {user}! Я спечу тобі смачний пиріг, коли повернешся!",
+        "expression=smile Будь обережніше в Сонячному світі, {user}!",
+        "expression=smile Скоро побачимось, {user}!",
+        "expression=smile Приємно було тебе зустріти, {user}!",
+        "expression=smile До побачення, {user}!"
+    ],
+
+    "love": [
+        "expression=smile-blush Аххх. Я теж тебе люблю, {user}!",
+        "expression=smile-blush Я тебе також люблю, {user}!",
+        "expression=smile-blush Я люблю ТЕБЕ, {user}!",
+        "expression=looking-down-blush Я-я... Я теж тебе люблю, {user}!",
+        "expression=smile-blush Щиро тобі дякую, {user}! Я теж тебе люблю! Ахх",
+        "expression=smile-blush Я теж тебе люблю, {user}! Хочеш обійнятися?",
+        "expression=smile-blush Я теж тебе люблю, {user}! *обіймає*",
+        "expression=smile-blush Я теж платонічно тебе люблю, {user}!",
+        "expression=smile-blush Дякую, {user}! Я теж тебе люблю.",
+        "expression=looking-down-blush Я-я... теж тебе люблю, {user}!"
+    ],
+
+    "timegreet": [
+        "Ах, -$greet$- -$time$- тобі теж, {user}!",
+        "Доброго -$time$- тобі теж, {user}!",
+        "-$greet$- -$time$-, {user}!",
+        "Доброго -$time$-, {user}!",
+        "Доброго -$time$- й тобі, {user}!",
+        "Хорошого -$time$- тобі, {user}!"
+    ],
+
+    "ask": {
+        "very-positive": [
+            "expression=happy Звісно!\nЯ впевнений в цьому!",
+            "expression=happy Я кажу своє стверджувальне так!",
+            "expression=shocked Так.",
+            "expression=shocked Я налаштований позитивно.",
+            "expression=shocked Однозначно.",
+            "expression=shocked А чому ні?",
+            "expression=happy Так!",
+            "expression=happy Я налаштований позитивно!",
+            "expression=happy Беззаперечно!",
+            "expression=happy А чому ні?!"
+        ],
+        "positive": [
+            "Певно, що так.",
+            "expression=looking-down Мабуть так? Я не певен...",
+            "expression=looking-down Хм-м...\nНапевно?",
+            "<box>expression=looking-down Хм-м...</box><box>Та, звичайно!</box>",
+            "<box>expression=looking-down-blushing Так... Мабуть...</box>",
+            "expression=looking-down Скоріш за все...",
+            "expression=expressionless Так?"
+        ],
+        "uncertain": [
+            "expression=looking-down Хмм...",
+            "expression=looking-down Можливо...",
+            "expression=looking-down Напевно...",
+            "expression=looking-down Дай-но подумати...",
+            "expression=expressionless Можливо.",
+            "expression=expressionless Напевно?",
+            "expression=expressionless Мабуть.",
+            "expression=expressionless Можливо?"
+        ],
+        "negative": [
+            "expression=expressionless Напевно ні.",
+            "expression=looking-down Мабуть, що ні? Я не певен...",
+            "expression=looking-down Хм-м...\nПевно, ні?",
+            "<box>expression=looking-down Хм-м...</box><box>expression=expressionless Та, ні.</box>",
+            "<box>expression=looking-down-blushing Ні... Напевно ні...</box>",
+            "expression=looking-down Скоріш за все ні...",
+            "expression=expressionless Ні?"
+        ],
+        "very-negative": [
+            "expression=expressionless Звісно ні!\nЯ впевнений в цьому!",
+            "expression=expressionless Я кажу своє стверджувальне ні!",
+            "expression=shocked Ні.",
+            "expression=shocked Я впевнений, що ні.",
+            "expression=shocked Однозначноні.",
+            "expression=angry Ні!",
+            "expression=angry Беззаперечно ні!"
+        ]
+    },
+
+    "requesthug": {
+        "intro": [
+            "character= Ральзей обіймає {0}.",
+            "character= Ральзей дивує {0} міцними обіймами.",
+            "character= Ральзей обіймає {0} ззаду.",
+            "character= Ральзей обіймає {0}.",
+            "character= Ральзей місно обіймає {0}.",
+            "character= Ральзей сором'язливо обіймає {0}.",
+            "character= Ральзей підходить до {0}, щоб обійняти."
+        ],
+
+        "default": [
+            "character= Ральзей на дотик м'який і пухнастий.",
+            "character= Ральзей цінує це.",
+            "character= Вони не хочеш відпускати.",
+            "character= Пухнастість сяє в їхньому серці.",
+            "character= Такий милий хлопчик.",
+            "character= Дуже мило.",
+            "character= Ральзей не відпускає.",
+            "character= Його цікавить інше.",
+            "character= Вони втомилися!",
+            "character= Вони були вгамовані!"
+        ]
+    },
+
+    "givehug": [
+        "<box>expression=looking-down-blush {userfc}-{user}? Ти...</box><box>expression=smile-blush Ахх. Ти солодше Тьмолодощів! Дякую, {user}!</box>",
+        "expression=smile-blush Воу! Я не очікував цього, але ціную таке, {user}!",
+        "<box>expression=smile-blush Ахх. Дяка, {user}!</box><box>expression=looking-down-blush М-можна ми ще раз обіймемось? Мені... Мені справді сподобалось.</box>",
+        "expression=smile-blush {user}! Не варто було! Дякую!"
+    ],
+
+    "thank": [
+        "expression=happy Ох! Без проблем, {user}!",
+        "expression=happy Прошу, {user}!",
+        "expression=happy Завжди радий, {user}!"
+    ],
+
+    "kitchen":  {
+        "microwave": {
+            "success": "<box>Ось {0} {1} для тебе, {user}!</box><box>character= Ральзей дає тобі {2}.</box>"
+        },
+        "oven": {
+            "normal": "<box>expression=happy Ось {0} {1} для тебе, {user}!</box><box>Сподіваюся, тобі сподобається.</box>",
+            "instant": "<box>expression=happy Ось {0} {1} для тебе, {user}!</box><box>expression=smile-looking-down ОЙ. Схоже, трохи підгоріло...\nТи не сердишся через це?</box>"
+        }
+    },
+
+    "fluffy": [
+        "expression=looking-down-blush Оу! ум... Дякую, {user}!"
+    ],
+
+    "disgustblock": [
+        "character= Ні."
+    ],
+
+    "lewdwarn": [
+        "expression=derp Стоп. Жодних непристойностей.",
+        "expression=derp стоп. жодних непристойностей.",
+        "expression=derp що",
+        "expression=derp чому",
+        "expression=derp так грубо"
+    ]
+
+}
